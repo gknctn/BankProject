@@ -20,4 +20,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BankProject.BusinessLayer\BankProject.BusinessLayer.csproj" />
+    <ProjectReference Include="..\BankProject.DataAccessLayer\BankProject.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\BankProject.EntityLayer\BankProject.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
