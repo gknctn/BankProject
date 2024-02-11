@@ -19,4 +19,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\CustomerAccountProcessDtos\" />
+    <Folder Include="Dtos\CustomerAccountDtos\" />
+    <Folder Include="Dtos\AppRoleDtos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BankProject.EntityLayer\BankProject.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
