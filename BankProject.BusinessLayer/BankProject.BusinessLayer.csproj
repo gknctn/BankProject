@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BankProject.DataAccessLayer\BankProject.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\BankProject.DtoLayer\BankProject.DtoLayer.csproj" />
     <ProjectReference Include="..\BankProject.EntityLayer\BankProject.EntityLayer.csproj" />
   </ItemGroup>
 

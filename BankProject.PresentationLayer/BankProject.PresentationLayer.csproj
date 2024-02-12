@@ -18,11 +18,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BankProject.BusinessLayer\BankProject.BusinessLayer.csproj" />
     <ProjectReference Include="..\BankProject.DataAccessLayer\BankProject.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\BankProject.DtoLayer\BankProject.DtoLayer.csproj" />
     <ProjectReference Include="..\BankProject.EntityLayer\BankProject.EntityLayer.csproj" />
   </ItemGroup>
 
