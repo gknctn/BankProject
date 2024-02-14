@@ -1,0 +1,35 @@
+﻿@model BankProject.EntityLayer.Concrete.AppUser
+
+@{
+    ViewData["Title"] = "ProfileEdit";
+    Layout = "~/Areas/CustomerPanel/Views/Shared/_CustomerPanelLayout.cshtml";
+}
+
+<h2>ProfileEdit</h2>
+
+<form method="post">
+    <label asp-for="UserName"> Kullanıcı adı</label>
+    <input class="form-control" asp-for="UserName" />
+
+    <label asp-for="Name">Ad</label>
+    <input class="form-control" asp-for="Name" />
+
+    <label asp-for="Surname">Soyad</label>
+    <input class="form-control" asp-for="Surname" />
+
+    <label asp-for="Email">E-mail</label>
+    <input class="form-control" asp-for="Email" />
+
+    <label asp-for="PhoneNumber">Telefon numarası</label>
+    <input class="form-control" asp-for="PhoneNumber" />
+
+    <label asp-for="ImageUrl">Resim yolu</label>
+    <input class="form-control" asp-for="ImageUrl" />
+
+    <label asp-for="City">Şehir</label>
+    <input class="form-control" asp-for="City" />
+
+    <label asp-for="District">Semt</label>
+    <input class="form-control" asp-for="District" />
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>

@@ -35,7 +35,6 @@ namespace BankProject.PresentationLayer.Controllers
                     Email = appUserRegisterDto.Email,
                     City = "Ankara",
                     District="asdasd",
-                    ImageUrl="dasdasdas",
                     ConfirmCode= code
                 };
                 var result = await _userManager.CreateAsync(appUser,appUserRegisterDto.Password);
@@ -57,6 +56,8 @@ namespace BankProject.PresentationLayer.Controllers
                     smtpClient.Authenticate("gknctn66@gmail.com", "tlcx wrio qwzx yajf");
                     smtpClient.Send(mimeMessage);
                     smtpClient.Disconnect(true);
+
+                    TempData["Mail"] = appUserRegisterDto.Email;
 
                     return RedirectToAction("index", "ConfirmMail");
                 }

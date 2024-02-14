@@ -29,4 +29,9 @@
     <ProjectReference Include="..\BankProject.EntityLayer\BankProject.EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\CustomerPanel\Data\" />
+    <Folder Include="Areas\CustomerPanel\Models\" />
+  </ItemGroup>
+
 </Project>
