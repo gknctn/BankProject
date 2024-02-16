@@ -69,5 +69,11 @@ namespace BankProject.PresentationLayer.Areas.CostumerPanel.Controllers
                 return RedirectToAction("ProfileEdit");
             }
         }
+        [HttpGet]
+        public IActionResult UserContact()
+        {
+            return View();
+        }
+        
     }
 }

@@ -9,7 +9,7 @@
 <!-- Head -->
 <head>
 
-    <title>Bank | Register</title>
+    <title>Bank | Login</title>
 
     <!-- Meta-Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,17 +39,17 @@
         <form method="post">
             <input type="text" asp-for="UserName" placeholder="Kullanıcı adı">
             <input type="password" asp-for="Password" placeholder="Şifre">
-            
+
             <div asp-validation-summary="ModelOnly"></div>
             <ul class="agileinfotickwthree">
                 <li>
                     <input type="checkbox" id="brand1" value="">
                     <label for="brand1"><span></span>Kullanım şartlarını okudum.</label>
-                    <a href="#">Bir hesabınız var mı?</a>
+                    <a asp-controller="Register" asp-action="Index">Bir hesabınız yok mı?</a>
                 </li>
             </ul>
             <div class="aitssendbuttonw3ls">
-                <input type="submit" value="Kayit ol">
+                <input type="submit" value="Giriş yap">
                 <p> Anasayfaya dön <span>→</span> <a class="w3_play_icon1" href="#">Anasayfa</a></p>
                 <div class="clear"></div>
             </div>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="w3footeragile">
-        <p> &copy; @DateTime.UtcNow.Year Bank Kayıt ol sayfası.Tum haklari saklıdır. | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+        <p> &copy; @DateTime.UtcNow.Year Bank Giris Yap sayfası.Tum haklari saklıdır. | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
     </div>
 
 

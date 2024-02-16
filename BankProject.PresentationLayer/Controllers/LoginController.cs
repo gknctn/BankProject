@@ -29,7 +29,7 @@ namespace BankProject.PresentationLayer.Controllers
                 var user = await _userManager.FindByNameAsync(loginViewModel.UserName);
                 if (user.EmailConfirmed == true)
                 {
-                    return RedirectToAction("ProfileDetail", "UserProfile", new { area = "CustomerPanel" });
+                    return RedirectToAction("Index", "UserDashboard", new { area = "CustomerPanel" });
                 }
             }
             return View();
